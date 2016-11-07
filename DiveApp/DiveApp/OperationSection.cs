@@ -18,6 +18,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -95,6 +96,132 @@ namespace DiveApp
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            writeToFile();
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton7_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton12_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton16_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void writeToFile()
+        {
+            StreamWriter writer = new StreamWriter("D:\\Users\\Mark\\Desktop\\OperationsDebriefTest.txt");
+            writer.WriteLine("Operations Debrief");
+            writer.WriteLine("Date: " + dateTimePicker1.Value.Date);
+
+            if (radioButton1.Checked == true)
+            {
+                writer.WriteLine("Vessel Problems: Yes");
+                writer.WriteLine("Vessel Problem Details: " + textBox1.Text);
+            }
+            else
+                writer.WriteLine("Vessel Problems: No");
+
+
+            if (radioButton3.Checked == true)
+            {
+                writer.WriteLine("Equipment Problems: Yes");
+                writer.WriteLine("Equipment Problem Details: " + textBox2.Text);
+            }
+            else
+                writer.WriteLine("Equipment Problems: No");
+
+            if (radioButton5.Checked == true)
+            {
+                writer.WriteLine("Injuries: Yes");
+                writer.WriteLine("Injury Details: " + textBox3.Text);
+            }
+            else
+                writer.WriteLine("Injuries: No");
+
+            if (radioButton8.Checked == true)
+            {
+                writer.WriteLine("Injuries Administration Packet Completed by a Supervisor: Yes");
+                writer.WriteLine("Completed by: " + textBox4.Text);
+            }
+            else
+                writer.WriteLine("Injuries Administration Packet Completed by a Supervisor: No");
+
+            if (radioButton12.Checked == true)
+            {
+                writer.WriteLine("Lost or Damaged Department Property: Yes");
+                writer.WriteLine("Lost or Damaged Propety Details: " + textBox5.Text);
+            }
+            else
+                writer.WriteLine("Lost or Damaged Department Property: No");
+
+            if (radioButton16.Checked == true)
+            {
+                writer.WriteLine("Lost or Damaged Department Property Administrative Packet Completed: Yes");
+                writer.WriteLine("Completed by: " + textBox6.Text);
+            }
+            else
+                writer.WriteLine("Lost or Damaged Department Property Administrative Packet Completed: No");
+
+            writer.WriteLine("Worked Well: " + textBox7.Text);
+            writer.WriteLine("Did Not Work Well: " + textBox8.Text);
+
+            writer.Close();
         }
     }
 }
