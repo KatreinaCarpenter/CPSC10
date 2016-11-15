@@ -238,5 +238,20 @@ namespace DiveApp
         {
 
         }
+
+        private void radioButton19_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton22_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -25,3 +25,5 @@ C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.csprojResolveAsse
 C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.OperationSection.resources
 C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.Properties.Resources.resources
 C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.csproj.GenerateResource.Cache
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\bin\Debug\System.Data.SQLite.dll
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\bin\Debug\System.Data.SQLite.xml
