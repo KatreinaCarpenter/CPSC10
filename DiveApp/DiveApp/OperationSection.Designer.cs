@@ -32,18 +32,9 @@
             this.opPlanTab = new System.Windows.Forms.TabPage();
             this.diver1Tab = new System.Windows.Forms.TabPage();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.radioButton20 = new System.Windows.Forms.RadioButton();
-            this.label21 = new System.Windows.Forms.Label();
-            this.radioButton19 = new System.Windows.Forms.RadioButton();
-            this.label22 = new System.Windows.Forms.Label();
+            this.diverOneTitleLabel = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.radioButton22 = new System.Windows.Forms.RadioButton();
-            this.radioButton21 = new System.Windows.Forms.RadioButton();
-            this.label31 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
@@ -51,9 +42,16 @@
             this.label24 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.radioButton20 = new System.Windows.Forms.RadioButton();
+            this.label21 = new System.Windows.Forms.Label();
+            this.radioButton19 = new System.Windows.Forms.RadioButton();
+            this.label22 = new System.Windows.Forms.Label();
             this.diver2Tab = new System.Windows.Forms.TabPage();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label48 = new System.Windows.Forms.Label();
+            this.diverTwoTitleLabel = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
@@ -74,7 +72,7 @@
             this.label39 = new System.Windows.Forms.Label();
             this.diver3Tab = new System.Windows.Forms.TabPage();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label54 = new System.Windows.Forms.Label();
+            this.diverThreeTitleLabel = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -118,10 +116,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.vesselProblemRadioPanel = new System.Windows.Forms.Panel();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.label17 = new System.Windows.Forms.Label();
+            this.debriefTitleLabel = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -172,7 +170,7 @@
             this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.vesselProblemRadioPanel.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -185,6 +183,7 @@
             this.operationTabControl.Controls.Add(this.diver3Tab);
             this.operationTabControl.Controls.Add(this.debriefTab);
             this.operationTabControl.Controls.Add(this.diveTableTab);
+            this.operationTabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.operationTabControl.Location = new System.Drawing.Point(103, 2);
             this.operationTabControl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.operationTabControl.Name = "operationTabControl";
@@ -195,11 +194,11 @@
             // opPlanTab
             // 
             this.opPlanTab.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.opPlanTab.Location = new System.Drawing.Point(4, 25);
+            this.opPlanTab.Location = new System.Drawing.Point(4, 29);
             this.opPlanTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.opPlanTab.Name = "opPlanTab";
             this.opPlanTab.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.opPlanTab.Size = new System.Drawing.Size(893, 629);
+            this.opPlanTab.Size = new System.Drawing.Size(893, 684);
             this.opPlanTab.TabIndex = 0;
             this.opPlanTab.Text = "Operation Plan";
             this.opPlanTab.Click += new System.EventHandler(this.preOpTab_Click);
@@ -208,17 +207,17 @@
             // 
             this.diver1Tab.BackColor = System.Drawing.Color.CornflowerBlue;
             this.diver1Tab.Controls.Add(this.panel14);
-            this.diver1Tab.Location = new System.Drawing.Point(4, 25);
+            this.diver1Tab.Location = new System.Drawing.Point(4, 29);
             this.diver1Tab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.diver1Tab.Name = "diver1Tab";
             this.diver1Tab.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.diver1Tab.Size = new System.Drawing.Size(893, 688);
+            this.diver1Tab.Size = new System.Drawing.Size(893, 684);
             this.diver1Tab.TabIndex = 1;
             this.diver1Tab.Text = "Diver 1";
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.label18);
+            this.panel14.Controls.Add(this.diverOneTitleLabel);
             this.panel14.Controls.Add(this.panel11);
             this.panel14.Controls.Add(this.label19);
             this.panel14.Controls.Add(this.label23);
@@ -233,16 +232,106 @@
             this.panel14.Size = new System.Drawing.Size(741, 607);
             this.panel14.TabIndex = 12;
             // 
-            // label18
+            // diverOneTitleLabel
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(16, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(191, 44);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "Diver One";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+            this.diverOneTitleLabel.AutoSize = true;
+            this.diverOneTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.diverOneTitleLabel.Location = new System.Drawing.Point(16, 0);
+            this.diverOneTitleLabel.Name = "diverOneTitleLabel";
+            this.diverOneTitleLabel.Size = new System.Drawing.Size(191, 44);
+            this.diverOneTitleLabel.TabIndex = 0;
+            this.diverOneTitleLabel.Text = "Diver One";
+            this.diverOneTitleLabel.Click += new System.EventHandler(this.label18_Click);
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.button2);
+            this.panel11.Controls.Add(this.label30);
+            this.panel11.Controls.Add(this.label29);
+            this.panel11.Controls.Add(this.label28);
+            this.panel11.Controls.Add(this.label27);
+            this.panel11.Controls.Add(this.label24);
+            this.panel11.Controls.Add(this.label26);
+            this.panel11.Controls.Add(this.label25);
+            this.panel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel11.Location = new System.Drawing.Point(3, 267);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(632, 323);
+            this.panel11.TabIndex = 11;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(20, 267);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(288, 45);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Create New Dive Segment";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(19, 227);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(241, 25);
+            this.label30.TabIndex = 14;
+            this.label30.Text = "Dive Segment Comments:";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(19, 195);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(70, 25);
+            this.label29.TabIndex = 13;
+            this.label29.Text = "Depth:";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(19, 164);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(173, 25);
+            this.label28.TabIndex = 12;
+            this.label28.Text = "Time out of Water:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(19, 127);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(190, 25);
+            this.label27.TabIndex = 11;
+            this.label27.Text = "Air Check (time/psi):";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(16, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(222, 38);
+            this.label24.TabIndex = 8;
+            this.label24.Text = "Dive Segment";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(19, 91);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(140, 25);
+            this.label26.TabIndex = 10;
+            this.label26.Text = "Time in Water:";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(19, 55);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(151, 25);
+            this.label25.TabIndex = 9;
+            this.label25.Text = "Starting Air PSI:";
             // 
             // label19
             // 
@@ -313,135 +402,21 @@
             this.label22.TabIndex = 4;
             this.label22.Text = "Rapid Neuro check?";
             // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.radioButton22);
-            this.panel11.Controls.Add(this.radioButton21);
-            this.panel11.Controls.Add(this.label31);
-            this.panel11.Controls.Add(this.label30);
-            this.panel11.Controls.Add(this.label29);
-            this.panel11.Controls.Add(this.label28);
-            this.panel11.Controls.Add(this.label27);
-            this.panel11.Controls.Add(this.label24);
-            this.panel11.Controls.Add(this.label26);
-            this.panel11.Controls.Add(this.label25);
-            this.panel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel11.Location = new System.Drawing.Point(3, 267);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(632, 293);
-            this.panel11.TabIndex = 11;
-            // 
-            // radioButton22
-            // 
-            this.radioButton22.AutoSize = true;
-            this.radioButton22.Location = new System.Drawing.Point(443, 258);
-            this.radioButton22.Name = "radioButton22";
-            this.radioButton22.Size = new System.Drawing.Size(58, 29);
-            this.radioButton22.TabIndex = 17;
-            this.radioButton22.TabStop = true;
-            this.radioButton22.Text = "No";
-            this.radioButton22.UseVisualStyleBackColor = true;
-            this.radioButton22.CheckedChanged += new System.EventHandler(this.radioButton22_CheckedChanged);
-            // 
-            // radioButton21
-            // 
-            this.radioButton21.AutoSize = true;
-            this.radioButton21.Location = new System.Drawing.Point(368, 258);
-            this.radioButton21.Name = "radioButton21";
-            this.radioButton21.Size = new System.Drawing.Size(67, 29);
-            this.radioButton21.TabIndex = 16;
-            this.radioButton21.TabStop = true;
-            this.radioButton21.Text = "Yes";
-            this.radioButton21.UseVisualStyleBackColor = true;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(19, 262);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(343, 25);
-            this.label31.TabIndex = 15;
-            this.label31.Text = "Open another segment for Diver One?";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(19, 227);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(241, 25);
-            this.label30.TabIndex = 14;
-            this.label30.Text = "Dive Segment Comments:";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(19, 195);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(70, 25);
-            this.label29.TabIndex = 13;
-            this.label29.Text = "Depth:";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(19, 164);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(173, 25);
-            this.label28.TabIndex = 12;
-            this.label28.Text = "Time out of Water:";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(19, 127);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(190, 25);
-            this.label27.TabIndex = 11;
-            this.label27.Text = "Air Check (time/psi):";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(16, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(231, 39);
-            this.label24.TabIndex = 8;
-            this.label24.Text = "Dive Segment";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(19, 91);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(140, 25);
-            this.label26.TabIndex = 10;
-            this.label26.Text = "Time in Water:";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(19, 55);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(151, 25);
-            this.label25.TabIndex = 9;
-            this.label25.Text = "Starting Air PSI:";
-            // 
             // diver2Tab
             // 
             this.diver2Tab.BackColor = System.Drawing.Color.CadetBlue;
             this.diver2Tab.Controls.Add(this.panel15);
             this.diver2Tab.Controls.Add(this.panel12);
-            this.diver2Tab.Location = new System.Drawing.Point(4, 25);
+            this.diver2Tab.Location = new System.Drawing.Point(4, 29);
             this.diver2Tab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.diver2Tab.Name = "diver2Tab";
-            this.diver2Tab.Size = new System.Drawing.Size(893, 629);
+            this.diver2Tab.Size = new System.Drawing.Size(893, 684);
             this.diver2Tab.TabIndex = 2;
             this.diver2Tab.Text = "Diver 2";
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.label48);
+            this.panel15.Controls.Add(this.diverTwoTitleLabel);
             this.panel15.Controls.Add(this.label49);
             this.panel15.Controls.Add(this.label50);
             this.panel15.Controls.Add(this.label51);
@@ -454,21 +429,21 @@
             this.panel15.Size = new System.Drawing.Size(425, 268);
             this.panel15.TabIndex = 13;
             // 
-            // label48
+            // diverTwoTitleLabel
             // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(65, 17);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(71, 17);
-            this.label48.TabIndex = 0;
-            this.label48.Text = "Diver Two";
+            this.diverTwoTitleLabel.AutoSize = true;
+            this.diverTwoTitleLabel.Location = new System.Drawing.Point(65, 17);
+            this.diverTwoTitleLabel.Name = "diverTwoTitleLabel";
+            this.diverTwoTitleLabel.Size = new System.Drawing.Size(85, 20);
+            this.diverTwoTitleLabel.TabIndex = 0;
+            this.diverTwoTitleLabel.Text = "Diver Two";
             // 
             // label49
             // 
             this.label49.AutoSize = true;
             this.label49.Location = new System.Drawing.Point(18, 57);
             this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(49, 17);
+            this.label49.Size = new System.Drawing.Size(58, 20);
             this.label49.TabIndex = 1;
             this.label49.Text = "Name:";
             // 
@@ -477,7 +452,7 @@
             this.label50.AutoSize = true;
             this.label50.Location = new System.Drawing.Point(18, 192);
             this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(109, 17);
+            this.label50.Size = new System.Drawing.Size(132, 20);
             this.label50.TabIndex = 7;
             this.label50.Text = "Mission Role(s):";
             // 
@@ -486,7 +461,7 @@
             this.label51.AutoSize = true;
             this.label51.Location = new System.Drawing.Point(18, 89);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(58, 17);
+            this.label51.Size = new System.Drawing.Size(66, 20);
             this.label51.TabIndex = 2;
             this.label51.Text = "Tender:";
             // 
@@ -495,7 +470,7 @@
             this.radioButton27.AutoSize = true;
             this.radioButton27.Location = new System.Drawing.Point(230, 154);
             this.radioButton27.Name = "radioButton27";
-            this.radioButton27.Size = new System.Drawing.Size(47, 21);
+            this.radioButton27.Size = new System.Drawing.Size(51, 24);
             this.radioButton27.TabIndex = 6;
             this.radioButton27.TabStop = true;
             this.radioButton27.Text = "No";
@@ -506,7 +481,7 @@
             this.label52.AutoSize = true;
             this.label52.Location = new System.Drawing.Point(18, 121);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(187, 17);
+            this.label52.Size = new System.Drawing.Size(221, 20);
             this.label52.TabIndex = 3;
             this.label52.Text = "Dive Equipment checked by:";
             // 
@@ -515,7 +490,7 @@
             this.radioButton28.AutoSize = true;
             this.radioButton28.Location = new System.Drawing.Point(171, 154);
             this.radioButton28.Name = "radioButton28";
-            this.radioButton28.Size = new System.Drawing.Size(53, 21);
+            this.radioButton28.Size = new System.Drawing.Size(58, 24);
             this.radioButton28.TabIndex = 5;
             this.radioButton28.TabStop = true;
             this.radioButton28.Text = "Yes";
@@ -526,7 +501,7 @@
             this.label53.AutoSize = true;
             this.label53.Location = new System.Drawing.Point(18, 156);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(137, 17);
+            this.label53.Size = new System.Drawing.Size(160, 20);
             this.label53.TabIndex = 4;
             this.label53.Text = "Rapid Neuro check?";
             // 
@@ -552,7 +527,7 @@
             this.radioButton23.AutoSize = true;
             this.radioButton23.Location = new System.Drawing.Point(335, 260);
             this.radioButton23.Name = "radioButton23";
-            this.radioButton23.Size = new System.Drawing.Size(47, 21);
+            this.radioButton23.Size = new System.Drawing.Size(51, 24);
             this.radioButton23.TabIndex = 17;
             this.radioButton23.TabStop = true;
             this.radioButton23.Text = "No";
@@ -563,7 +538,7 @@
             this.radioButton24.AutoSize = true;
             this.radioButton24.Location = new System.Drawing.Point(276, 260);
             this.radioButton24.Name = "radioButton24";
-            this.radioButton24.Size = new System.Drawing.Size(53, 21);
+            this.radioButton24.Size = new System.Drawing.Size(58, 24);
             this.radioButton24.TabIndex = 16;
             this.radioButton24.TabStop = true;
             this.radioButton24.Text = "Yes";
@@ -574,7 +549,7 @@
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(19, 262);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(250, 17);
+            this.label32.Size = new System.Drawing.Size(294, 20);
             this.label32.TabIndex = 15;
             this.label32.Text = "Open another segment for Diver Two?";
             // 
@@ -583,7 +558,7 @@
             this.label33.AutoSize = true;
             this.label33.Location = new System.Drawing.Point(19, 227);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(170, 17);
+            this.label33.Size = new System.Drawing.Size(205, 20);
             this.label33.TabIndex = 14;
             this.label33.Text = "Dive Segment Comments:";
             // 
@@ -592,7 +567,7 @@
             this.label34.AutoSize = true;
             this.label34.Location = new System.Drawing.Point(19, 195);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(50, 17);
+            this.label34.Size = new System.Drawing.Size(59, 20);
             this.label34.TabIndex = 13;
             this.label34.Text = "Depth:";
             // 
@@ -601,7 +576,7 @@
             this.label35.AutoSize = true;
             this.label35.Location = new System.Drawing.Point(19, 164);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(125, 17);
+            this.label35.Size = new System.Drawing.Size(148, 20);
             this.label35.TabIndex = 12;
             this.label35.Text = "Time out of Water:";
             // 
@@ -610,7 +585,7 @@
             this.label36.AutoSize = true;
             this.label36.Location = new System.Drawing.Point(19, 127);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(134, 17);
+            this.label36.Size = new System.Drawing.Size(163, 20);
             this.label36.TabIndex = 11;
             this.label36.Text = "Air Check (time/psi):";
             // 
@@ -619,7 +594,7 @@
             this.label37.AutoSize = true;
             this.label37.Location = new System.Drawing.Point(76, 17);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(96, 17);
+            this.label37.Size = new System.Drawing.Size(114, 20);
             this.label37.TabIndex = 8;
             this.label37.Text = "Dive Segment";
             // 
@@ -628,7 +603,7 @@
             this.label38.AutoSize = true;
             this.label38.Location = new System.Drawing.Point(19, 91);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(100, 17);
+            this.label38.Size = new System.Drawing.Size(119, 20);
             this.label38.TabIndex = 10;
             this.label38.Text = "Time in Water:";
             // 
@@ -637,7 +612,7 @@
             this.label39.AutoSize = true;
             this.label39.Location = new System.Drawing.Point(19, 55);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(107, 17);
+            this.label39.Size = new System.Drawing.Size(129, 20);
             this.label39.TabIndex = 9;
             this.label39.Text = "Starting Air PSI:";
             // 
@@ -646,16 +621,16 @@
             this.diver3Tab.BackColor = System.Drawing.Color.Teal;
             this.diver3Tab.Controls.Add(this.panel16);
             this.diver3Tab.Controls.Add(this.panel13);
-            this.diver3Tab.Location = new System.Drawing.Point(4, 25);
+            this.diver3Tab.Location = new System.Drawing.Point(4, 29);
             this.diver3Tab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.diver3Tab.Name = "diver3Tab";
-            this.diver3Tab.Size = new System.Drawing.Size(893, 629);
+            this.diver3Tab.Size = new System.Drawing.Size(893, 684);
             this.diver3Tab.TabIndex = 3;
             this.diver3Tab.Text = "Diver 3";
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.label54);
+            this.panel16.Controls.Add(this.diverThreeTitleLabel);
             this.panel16.Controls.Add(this.label55);
             this.panel16.Controls.Add(this.label56);
             this.panel16.Controls.Add(this.label57);
@@ -668,21 +643,21 @@
             this.panel16.Size = new System.Drawing.Size(425, 268);
             this.panel16.TabIndex = 13;
             // 
-            // label54
+            // diverThreeTitleLabel
             // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(65, 17);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(83, 17);
-            this.label54.TabIndex = 0;
-            this.label54.Text = "Diver Three";
+            this.diverThreeTitleLabel.AutoSize = true;
+            this.diverThreeTitleLabel.Location = new System.Drawing.Point(65, 17);
+            this.diverThreeTitleLabel.Name = "diverThreeTitleLabel";
+            this.diverThreeTitleLabel.Size = new System.Drawing.Size(97, 20);
+            this.diverThreeTitleLabel.TabIndex = 0;
+            this.diverThreeTitleLabel.Text = "Diver Three";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
             this.label55.Location = new System.Drawing.Point(18, 57);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(49, 17);
+            this.label55.Size = new System.Drawing.Size(58, 20);
             this.label55.TabIndex = 1;
             this.label55.Text = "Name:";
             // 
@@ -691,7 +666,7 @@
             this.label56.AutoSize = true;
             this.label56.Location = new System.Drawing.Point(18, 192);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(109, 17);
+            this.label56.Size = new System.Drawing.Size(132, 20);
             this.label56.TabIndex = 7;
             this.label56.Text = "Mission Role(s):";
             // 
@@ -700,7 +675,7 @@
             this.label57.AutoSize = true;
             this.label57.Location = new System.Drawing.Point(18, 89);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(58, 17);
+            this.label57.Size = new System.Drawing.Size(66, 20);
             this.label57.TabIndex = 2;
             this.label57.Text = "Tender:";
             // 
@@ -709,7 +684,7 @@
             this.radioButton29.AutoSize = true;
             this.radioButton29.Location = new System.Drawing.Point(230, 154);
             this.radioButton29.Name = "radioButton29";
-            this.radioButton29.Size = new System.Drawing.Size(47, 21);
+            this.radioButton29.Size = new System.Drawing.Size(51, 24);
             this.radioButton29.TabIndex = 6;
             this.radioButton29.TabStop = true;
             this.radioButton29.Text = "No";
@@ -720,7 +695,7 @@
             this.label58.AutoSize = true;
             this.label58.Location = new System.Drawing.Point(18, 121);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(187, 17);
+            this.label58.Size = new System.Drawing.Size(221, 20);
             this.label58.TabIndex = 3;
             this.label58.Text = "Dive Equipment checked by:";
             // 
@@ -729,7 +704,7 @@
             this.radioButton30.AutoSize = true;
             this.radioButton30.Location = new System.Drawing.Point(171, 154);
             this.radioButton30.Name = "radioButton30";
-            this.radioButton30.Size = new System.Drawing.Size(53, 21);
+            this.radioButton30.Size = new System.Drawing.Size(58, 24);
             this.radioButton30.TabIndex = 5;
             this.radioButton30.TabStop = true;
             this.radioButton30.Text = "Yes";
@@ -740,7 +715,7 @@
             this.label59.AutoSize = true;
             this.label59.Location = new System.Drawing.Point(18, 156);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(137, 17);
+            this.label59.Size = new System.Drawing.Size(160, 20);
             this.label59.TabIndex = 4;
             this.label59.Text = "Rapid Neuro check?";
             // 
@@ -766,7 +741,7 @@
             this.radioButton25.AutoSize = true;
             this.radioButton25.Location = new System.Drawing.Point(346, 260);
             this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(47, 21);
+            this.radioButton25.Size = new System.Drawing.Size(51, 24);
             this.radioButton25.TabIndex = 17;
             this.radioButton25.TabStop = true;
             this.radioButton25.Text = "No";
@@ -778,7 +753,7 @@
             this.radioButton26.AutoSize = true;
             this.radioButton26.Location = new System.Drawing.Point(287, 260);
             this.radioButton26.Name = "radioButton26";
-            this.radioButton26.Size = new System.Drawing.Size(53, 21);
+            this.radioButton26.Size = new System.Drawing.Size(58, 24);
             this.radioButton26.TabIndex = 16;
             this.radioButton26.TabStop = true;
             this.radioButton26.Text = "Yes";
@@ -789,7 +764,7 @@
             this.label40.AutoSize = true;
             this.label40.Location = new System.Drawing.Point(19, 262);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(262, 17);
+            this.label40.Size = new System.Drawing.Size(306, 20);
             this.label40.TabIndex = 15;
             this.label40.Text = "Open another segment for Diver Three?";
             // 
@@ -798,7 +773,7 @@
             this.label41.AutoSize = true;
             this.label41.Location = new System.Drawing.Point(19, 227);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(170, 17);
+            this.label41.Size = new System.Drawing.Size(205, 20);
             this.label41.TabIndex = 14;
             this.label41.Text = "Dive Segment Comments:";
             // 
@@ -807,7 +782,7 @@
             this.label42.AutoSize = true;
             this.label42.Location = new System.Drawing.Point(19, 195);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(50, 17);
+            this.label42.Size = new System.Drawing.Size(59, 20);
             this.label42.TabIndex = 13;
             this.label42.Text = "Depth:";
             // 
@@ -816,7 +791,7 @@
             this.label43.AutoSize = true;
             this.label43.Location = new System.Drawing.Point(19, 164);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(125, 17);
+            this.label43.Size = new System.Drawing.Size(148, 20);
             this.label43.TabIndex = 12;
             this.label43.Text = "Time out of Water:";
             // 
@@ -825,7 +800,7 @@
             this.label44.AutoSize = true;
             this.label44.Location = new System.Drawing.Point(19, 127);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(134, 17);
+            this.label44.Size = new System.Drawing.Size(163, 20);
             this.label44.TabIndex = 11;
             this.label44.Text = "Air Check (time/psi):";
             // 
@@ -834,7 +809,7 @@
             this.label45.AutoSize = true;
             this.label45.Location = new System.Drawing.Point(76, 17);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(96, 17);
+            this.label45.Size = new System.Drawing.Size(114, 20);
             this.label45.TabIndex = 8;
             this.label45.Text = "Dive Segment";
             // 
@@ -843,7 +818,7 @@
             this.label46.AutoSize = true;
             this.label46.Location = new System.Drawing.Point(19, 91);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(100, 17);
+            this.label46.Size = new System.Drawing.Size(119, 20);
             this.label46.TabIndex = 10;
             this.label46.Text = "Time in Water:";
             // 
@@ -852,7 +827,7 @@
             this.label47.AutoSize = true;
             this.label47.Location = new System.Drawing.Point(19, 55);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(107, 17);
+            this.label47.Size = new System.Drawing.Size(129, 20);
             this.label47.TabIndex = 9;
             this.label47.Text = "Starting Air PSI:";
             // 
@@ -864,8 +839,8 @@
             this.debriefTab.Controls.Add(this.panel5);
             this.debriefTab.Controls.Add(this.panel4);
             this.debriefTab.Controls.Add(this.panel3);
-            this.debriefTab.Controls.Add(this.panel2);
-            this.debriefTab.Controls.Add(this.label17);
+            this.debriefTab.Controls.Add(this.vesselProblemRadioPanel);
+            this.debriefTab.Controls.Add(this.debriefTitleLabel);
             this.debriefTab.Controls.Add(this.button1);
             this.debriefTab.Controls.Add(this.textBox8);
             this.debriefTab.Controls.Add(this.label16);
@@ -892,10 +867,10 @@
             this.debriefTab.Controls.Add(this.label2);
             this.debriefTab.Controls.Add(this.label1);
             this.debriefTab.Controls.Add(this.dateTimePicker1);
-            this.debriefTab.Location = new System.Drawing.Point(4, 25);
+            this.debriefTab.Location = new System.Drawing.Point(4, 29);
             this.debriefTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.debriefTab.Name = "debriefTab";
-            this.debriefTab.Size = new System.Drawing.Size(893, 629);
+            this.debriefTab.Size = new System.Drawing.Size(893, 684);
             this.debriefTab.TabIndex = 4;
             this.debriefTab.Text = "Debrief";
             this.debriefTab.Click += new System.EventHandler(this.debriefTab_Click);
@@ -905,7 +880,7 @@
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Controls.Add(this.radioButton15);
             this.panel9.Controls.Add(this.radioButton16);
-            this.panel9.Location = new System.Drawing.Point(351, 441);
+            this.panel9.Location = new System.Drawing.Point(410, 441);
             this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(267, 27);
@@ -927,7 +902,7 @@
             this.radioButton17.Location = new System.Drawing.Point(80, 0);
             this.radioButton17.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton17.Name = "radioButton17";
-            this.radioButton17.Size = new System.Drawing.Size(47, 21);
+            this.radioButton17.Size = new System.Drawing.Size(51, 24);
             this.radioButton17.TabIndex = 50;
             this.radioButton17.TabStop = true;
             this.radioButton17.Text = "No";
@@ -939,7 +914,7 @@
             this.radioButton18.Location = new System.Drawing.Point(19, 0);
             this.radioButton18.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton18.Name = "radioButton18";
-            this.radioButton18.Size = new System.Drawing.Size(53, 21);
+            this.radioButton18.Size = new System.Drawing.Size(58, 24);
             this.radioButton18.TabIndex = 49;
             this.radioButton18.TabStop = true;
             this.radioButton18.Text = "Yes";
@@ -951,7 +926,7 @@
             this.radioButton15.Location = new System.Drawing.Point(80, 0);
             this.radioButton15.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(47, 21);
+            this.radioButton15.Size = new System.Drawing.Size(51, 24);
             this.radioButton15.TabIndex = 50;
             this.radioButton15.TabStop = true;
             this.radioButton15.Text = "No";
@@ -963,7 +938,7 @@
             this.radioButton16.Location = new System.Drawing.Point(19, 0);
             this.radioButton16.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton16.Name = "radioButton16";
-            this.radioButton16.Size = new System.Drawing.Size(53, 21);
+            this.radioButton16.Size = new System.Drawing.Size(58, 24);
             this.radioButton16.TabIndex = 49;
             this.radioButton16.TabStop = true;
             this.radioButton16.Text = "Yes";
@@ -975,7 +950,7 @@
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Controls.Add(this.radioButton11);
             this.panel7.Controls.Add(this.radioButton12);
-            this.panel7.Location = new System.Drawing.Point(291, 375);
+            this.panel7.Location = new System.Drawing.Point(343, 374);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(267, 27);
@@ -997,7 +972,7 @@
             this.radioButton13.Location = new System.Drawing.Point(80, 0);
             this.radioButton13.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(47, 21);
+            this.radioButton13.Size = new System.Drawing.Size(51, 24);
             this.radioButton13.TabIndex = 50;
             this.radioButton13.TabStop = true;
             this.radioButton13.Text = "No";
@@ -1009,7 +984,7 @@
             this.radioButton14.Location = new System.Drawing.Point(19, 0);
             this.radioButton14.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(53, 21);
+            this.radioButton14.Size = new System.Drawing.Size(58, 24);
             this.radioButton14.TabIndex = 49;
             this.radioButton14.TabStop = true;
             this.radioButton14.Text = "Yes";
@@ -1021,7 +996,7 @@
             this.radioButton11.Location = new System.Drawing.Point(80, 0);
             this.radioButton11.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(47, 21);
+            this.radioButton11.Size = new System.Drawing.Size(51, 24);
             this.radioButton11.TabIndex = 50;
             this.radioButton11.TabStop = true;
             this.radioButton11.Text = "No";
@@ -1033,7 +1008,7 @@
             this.radioButton12.Location = new System.Drawing.Point(19, 0);
             this.radioButton12.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(53, 21);
+            this.radioButton12.Size = new System.Drawing.Size(58, 24);
             this.radioButton12.TabIndex = 49;
             this.radioButton12.TabStop = true;
             this.radioButton12.Text = "Yes";
@@ -1045,7 +1020,7 @@
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Controls.Add(this.radioButton7);
             this.panel5.Controls.Add(this.radioButton8);
-            this.panel5.Location = new System.Drawing.Point(351, 308);
+            this.panel5.Location = new System.Drawing.Point(409, 307);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(267, 27);
@@ -1067,7 +1042,7 @@
             this.radioButton9.Location = new System.Drawing.Point(80, 0);
             this.radioButton9.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(47, 21);
+            this.radioButton9.Size = new System.Drawing.Size(51, 24);
             this.radioButton9.TabIndex = 50;
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "No";
@@ -1079,7 +1054,7 @@
             this.radioButton10.Location = new System.Drawing.Point(19, 0);
             this.radioButton10.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(53, 21);
+            this.radioButton10.Size = new System.Drawing.Size(58, 24);
             this.radioButton10.TabIndex = 49;
             this.radioButton10.TabStop = true;
             this.radioButton10.Text = "Yes";
@@ -1091,7 +1066,7 @@
             this.radioButton7.Location = new System.Drawing.Point(80, 0);
             this.radioButton7.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(47, 21);
+            this.radioButton7.Size = new System.Drawing.Size(51, 24);
             this.radioButton7.TabIndex = 50;
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "No";
@@ -1104,7 +1079,7 @@
             this.radioButton8.Location = new System.Drawing.Point(19, 0);
             this.radioButton8.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(53, 21);
+            this.radioButton8.Size = new System.Drawing.Size(58, 24);
             this.radioButton8.TabIndex = 49;
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Yes";
@@ -1115,7 +1090,7 @@
             // 
             this.panel4.Controls.Add(this.radioButton6);
             this.panel4.Controls.Add(this.radioButton5);
-            this.panel4.Location = new System.Drawing.Point(184, 242);
+            this.panel4.Location = new System.Drawing.Point(116, 243);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(267, 27);
@@ -1127,7 +1102,7 @@
             this.radioButton6.Location = new System.Drawing.Point(80, 0);
             this.radioButton6.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(47, 21);
+            this.radioButton6.Size = new System.Drawing.Size(51, 24);
             this.radioButton6.TabIndex = 50;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "No";
@@ -1139,7 +1114,7 @@
             this.radioButton5.Location = new System.Drawing.Point(19, 0);
             this.radioButton5.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(53, 21);
+            this.radioButton5.Size = new System.Drawing.Size(58, 24);
             this.radioButton5.TabIndex = 49;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Yes";
@@ -1149,7 +1124,7 @@
             // 
             this.panel3.Controls.Add(this.radioButton4);
             this.panel3.Controls.Add(this.radioButton3);
-            this.panel3.Location = new System.Drawing.Point(184, 170);
+            this.panel3.Location = new System.Drawing.Point(215, 169);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(267, 30);
@@ -1161,7 +1136,7 @@
             this.radioButton4.Location = new System.Drawing.Point(80, 2);
             this.radioButton4.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(47, 21);
+            this.radioButton4.Size = new System.Drawing.Size(51, 24);
             this.radioButton4.TabIndex = 47;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "No";
@@ -1174,21 +1149,22 @@
             this.radioButton3.Location = new System.Drawing.Point(19, 2);
             this.radioButton3.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(53, 21);
+            this.radioButton3.Size = new System.Drawing.Size(58, 24);
             this.radioButton3.TabIndex = 45;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Yes";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
-            // panel2
+            // vesselProblemRadioPanel
             // 
-            this.panel2.Controls.Add(this.radioButton2);
-            this.panel2.Controls.Add(this.radioButton1);
-            this.panel2.Location = new System.Drawing.Point(184, 103);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(267, 31);
-            this.panel2.TabIndex = 46;
+            this.vesselProblemRadioPanel.Controls.Add(this.radioButton2);
+            this.vesselProblemRadioPanel.Controls.Add(this.radioButton1);
+            this.vesselProblemRadioPanel.Location = new System.Drawing.Point(184, 103);
+            this.vesselProblemRadioPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.vesselProblemRadioPanel.Name = "vesselProblemRadioPanel";
+            this.vesselProblemRadioPanel.Size = new System.Drawing.Size(267, 31);
+            this.vesselProblemRadioPanel.TabIndex = 46;
+            this.vesselProblemRadioPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.vesselProblemRadioPanel_Paint);
             // 
             // radioButton2
             // 
@@ -1196,7 +1172,7 @@
             this.radioButton2.Location = new System.Drawing.Point(80, 4);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(47, 21);
+            this.radioButton2.Size = new System.Drawing.Size(51, 24);
             this.radioButton2.TabIndex = 44;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "No";
@@ -1208,22 +1184,23 @@
             this.radioButton1.Location = new System.Drawing.Point(19, 4);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(53, 21);
+            this.radioButton1.Size = new System.Drawing.Size(58, 24);
             this.radioButton1.TabIndex = 43;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Yes";
             this.radioButton1.UseVisualStyleBackColor = true;
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // label17
+            // debriefTitleLabel
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(36, 7);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(321, 44);
-            this.label17.TabIndex = 42;
-            this.label17.Text = "Operation Debrief";
+            this.debriefTitleLabel.AutoSize = true;
+            this.debriefTitleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.debriefTitleLabel.Location = new System.Drawing.Point(36, 7);
+            this.debriefTitleLabel.Name = "debriefTitleLabel";
+            this.debriefTitleLabel.Size = new System.Drawing.Size(321, 44);
+            this.debriefTitleLabel.TabIndex = 42;
+            this.debriefTitleLabel.Text = "Operation Debrief";
+            this.debriefTitleLabel.Click += new System.EventHandler(this.label17_Click);
             // 
             // button1
             // 
@@ -1238,7 +1215,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(219, 567);
+            this.textBox8.Location = new System.Drawing.Point(242, 568);
             this.textBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
@@ -1251,7 +1228,7 @@
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(60, 571);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(147, 17);
+            this.label16.Size = new System.Drawing.Size(176, 20);
             this.label16.TabIndex = 39;
             this.label16.Text = "What didn\'t work well?";
             // 
@@ -1270,7 +1247,7 @@
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(60, 537);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(125, 17);
+            this.label15.Size = new System.Drawing.Size(149, 20);
             this.label15.TabIndex = 37;
             this.label15.Text = "What worked well?";
             // 
@@ -1279,13 +1256,13 @@
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(37, 510);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(201, 17);
+            this.label14.Size = new System.Drawing.Size(239, 20);
             this.label14.TabIndex = 36;
             this.label14.Text = "Tactics used/Lessons learned:";
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(251, 471);
+            this.textBox6.Location = new System.Drawing.Point(282, 474);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
@@ -1297,7 +1274,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(83, 474);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(162, 17);
+            this.label13.Size = new System.Drawing.Size(193, 20);
             this.label13.TabIndex = 34;
             this.label13.Text = "If yes, which supervisor?";
             // 
@@ -1306,13 +1283,13 @@
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(60, 444);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(290, 17);
+            this.label12.Size = new System.Drawing.Size(343, 20);
             this.label12.TabIndex = 31;
             this.label12.Text = "Supervisor completed administrative packet?";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(220, 409);
+            this.textBox5.Location = new System.Drawing.Point(251, 409);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
@@ -1325,7 +1302,7 @@
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(61, 412);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(153, 17);
+            this.label11.Size = new System.Drawing.Size(181, 20);
             this.label11.TabIndex = 29;
             this.label11.Text = "If yes, please describe:";
             // 
@@ -1334,13 +1311,13 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(37, 380);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(256, 17);
+            this.label10.Size = new System.Drawing.Size(299, 20);
             this.label10.TabIndex = 26;
             this.label10.Text = "Lost or damaged department property?";
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(249, 340);
+            this.textBox4.Location = new System.Drawing.Point(275, 340);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
@@ -1353,7 +1330,7 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(81, 343);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(162, 17);
+            this.label9.Size = new System.Drawing.Size(193, 20);
             this.label9.TabIndex = 24;
             this.label9.Text = "If yes, which supervisor?";
             // 
@@ -1362,13 +1339,13 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(59, 311);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(290, 17);
+            this.label6.Size = new System.Drawing.Size(343, 20);
             this.label6.TabIndex = 21;
             this.label6.Text = "Supervisor completed administrative packet?";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(219, 276);
+            this.textBox3.Location = new System.Drawing.Point(249, 276);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -1381,7 +1358,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(60, 279);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 17);
+            this.label3.Size = new System.Drawing.Size(181, 20);
             this.label3.TabIndex = 19;
             this.label3.Text = "If yes, please describe:";
             // 
@@ -1390,14 +1367,14 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(37, 246);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 17);
+            this.label8.Size = new System.Drawing.Size(72, 20);
             this.label8.TabIndex = 16;
             this.label8.Text = "Injuries?";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(219, 208);
+            this.textBox2.Location = new System.Drawing.Point(247, 207);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
@@ -1410,7 +1387,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(60, 210);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(153, 17);
+            this.label7.Size = new System.Drawing.Size(181, 20);
             this.label7.TabIndex = 14;
             this.label7.Text = "If yes, please describe:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
@@ -1420,13 +1397,13 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(37, 176);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 17);
+            this.label5.Size = new System.Drawing.Size(171, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Equipment problems?";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(219, 143);
+            this.textBox1.Location = new System.Drawing.Point(247, 141);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -1439,7 +1416,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(60, 143);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(153, 17);
+            this.label4.Size = new System.Drawing.Size(181, 20);
             this.label4.TabIndex = 8;
             this.label4.Text = "If yes, please describe:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
@@ -1449,7 +1426,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(37, 111);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 17);
+            this.label2.Size = new System.Drawing.Size(143, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "Vessel problems?";
             // 
@@ -1458,26 +1435,26 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(38, 75);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 17);
+            this.label1.Size = new System.Drawing.Size(92, 20);
             this.label1.TabIndex = 4;
             this.label1.Text = "Date/Time:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(121, 70);
+            this.dateTimePicker1.Location = new System.Drawing.Point(153, 68);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(249, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(249, 27);
             this.dateTimePicker1.TabIndex = 1;
             // 
             // diveTableTab
             // 
             this.diveTableTab.BackColor = System.Drawing.Color.LightSlateGray;
-            this.diveTableTab.Location = new System.Drawing.Point(4, 25);
+            this.diveTableTab.Location = new System.Drawing.Point(4, 29);
             this.diveTableTab.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.diveTableTab.Name = "diveTableTab";
-            this.diveTableTab.Size = new System.Drawing.Size(893, 629);
+            this.diveTableTab.Size = new System.Drawing.Size(893, 684);
             this.diveTableTab.TabIndex = 5;
             this.diveTableTab.Text = "Dive Table";
             // 
@@ -1573,8 +1550,8 @@
             this.panel4.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.vesselProblemRadioPanel.ResumeLayout(false);
+            this.vesselProblemRadioPanel.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1620,9 +1597,9 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label debriefTitleLabel;
         private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel vesselProblemRadioPanel;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel panel3;
@@ -1654,7 +1631,7 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label diverOneTitleLabel;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label29;
@@ -1664,9 +1641,6 @@
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.RadioButton radioButton22;
-        private System.Windows.Forms.RadioButton radioButton21;
-        private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.RadioButton radioButton23;
         private System.Windows.Forms.RadioButton radioButton24;
@@ -1691,7 +1665,7 @@
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Panel panel14;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label diverTwoTitleLabel;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
@@ -1700,7 +1674,7 @@
         private System.Windows.Forms.RadioButton radioButton28;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label diverThreeTitleLabel;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
@@ -1708,6 +1682,7 @@
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.RadioButton radioButton30;
         private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Button button2;
     }
 }
 

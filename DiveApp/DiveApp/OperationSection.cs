@@ -165,7 +165,7 @@ namespace DiveApp
 
         private void writeToFile()
         {
-            StreamWriter writer = new StreamWriter("D:\\Users\\Mark\\Desktop\\OperationsDebriefTest.txt");
+            StreamWriter writer = new StreamWriter("C:\\Users\\Katreina\\Desktop\\OperationsDebriefTest.txt");
             writer.WriteLine("Operations Debrief");
             writer.WriteLine("Date: " + dateTimePicker1.Value.Date);
 
@@ -250,6 +250,21 @@ namespace DiveApp
         }
 
         private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vesselProblemRadioPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
