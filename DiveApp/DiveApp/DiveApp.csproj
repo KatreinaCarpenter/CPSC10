@@ -35,6 +35,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\Users\Mark\Documents\Visual Studio 2015\Projects\SQLite Demo\SQLite Demo\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,16 +49,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OperationSection.cs">
+    <Compile Include="DiveDB.cs" />
+    <Compile Include="userInterface.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OperationSection.Designer.cs">
-      <DependentUpon>OperationSection.cs</DependentUpon>
+    <Compile Include="userInterface.Designer.cs">
+      <DependentUpon>userInterface.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="OperationSection.resx">
-      <DependentUpon>OperationSection.cs</DependentUpon>
+    <EmbeddedResource Include="userInterface.resx">
+      <DependentUpon>userInterface.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

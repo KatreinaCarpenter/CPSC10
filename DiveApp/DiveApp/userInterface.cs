@@ -26,9 +26,9 @@ using System.Windows.Forms;
 
 namespace DiveApp
 {
-    public partial class OperationSection : Form
+    public partial class userInterface : Form
     {
-        public OperationSection()
+        public userInterface()
         {
             InitializeComponent();
         }
@@ -100,7 +100,9 @@ namespace DiveApp
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            writeToFile();
+            DiveDB database = new DiveDB();
+            database.writeDB();
+            //writeToFile();
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -163,11 +165,26 @@ namespace DiveApp
 
         }
 
+        private void radioButtonOutput(RadioButton selection, TextBox text, String label, StreamWriter writer)
+        {
+            if (selection.Checked == true)
+            {
+                writer.WriteLine(label + ": Yes");
+                writer.WriteLine(label + " Details: " + text.Text);
+            }
+            else
+                writer.WriteLine(label + ": No");
+        }
+
         private void writeToFile()
         {
             StreamWriter writer = new StreamWriter("D:\\Users\\Mark\\Desktop\\OperationsDebriefTest.txt");
             writer.WriteLine("Operations Debrief");
             writer.WriteLine("Date: " + dateTimePicker1.Value.Date);
+
+            radioButtonOutput(radioButton1, textBox1, "Vessel Problems", writer);
+            radioButtonOutput(radioButton3, textBox2, "Equipment Problems", writer);
+            /*
 
             if (radioButton1.Checked == true)
             {
@@ -220,8 +237,14 @@ namespace DiveApp
 
             writer.WriteLine("Worked Well: " + textBox7.Text);
             writer.WriteLine("Did Not Work Well: " + textBox8.Text);
+            */
 
             writer.Close();
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

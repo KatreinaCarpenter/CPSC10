@@ -16,7 +16,7 @@ namespace DiveApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OperationSection());
+            Application.Run(new userInterface());
         }
     }
 }

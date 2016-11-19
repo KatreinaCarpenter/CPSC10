@@ -13,6 +13,8 @@ C:\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.pdb
 C:\cpsc10\DiveApp\DiveApp\bin\Debug\DiveApp.exe
 C:\cpsc10\DiveApp\DiveApp\bin\Debug\DiveApp.pdb
 C:\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.csprojResolveAssemblyReference.cache
-C:\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.OperationSection.resources
 C:\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.Properties.Resources.resources
 C:\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.csproj.GenerateResource.Cache
+C:\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.userInterface.resources
+C:\cpsc10\DiveApp\DiveApp\bin\Debug\System.Data.SQLite.dll
+C:\cpsc10\DiveApp\DiveApp\bin\Debug\System.Data.SQLite.xml
