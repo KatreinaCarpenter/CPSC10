@@ -20,7 +20,8 @@ namespace DiveApp
             m_dbConnection.Open();
 
             // create a table
-            string sql = "create table student (first_name varchar(20), last_name varchar(20), id int)";
+            string sql = "create table dive (id int, tab_name varchar(20), label_name varchar(20), input varchar(20))";
+            //string sql = "create table student (first_name varchar(20), last_name varchar(20), id int)";
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
         }
@@ -30,19 +31,19 @@ namespace DiveApp
             StreamWriter writer = new StreamWriter("D:\\Users\\Mark\\Desktop\\DBTest.txt");
 
 
-            string sql = "insert into student (first_name, last_name, id) ";
+            string sql = "insert into dive (id, tab_name, label_name, input) ";
 
-            sql += "values ('" + "Mark" + "', " + "'" + "Houston" + "', " + "47412498" + ")";
+            sql += "values ('" + "47412498" + "', " + "'" + "Debrief" + "', " + "Equipment" + "', " + "broken" + ")";/////////////Andrew can you fix this?
             SQLiteCommand command = new SQLiteCommand(sql, m_dbConnection);
             command.ExecuteNonQuery();
 
             // query the table and output the results to a file
-            sql = "select * from student";
+            sql = "select * from dive";
 
             command = new SQLiteCommand(sql, m_dbConnection);
             SQLiteDataReader reader = command.ExecuteReader();
             while (reader.Read())
-                writer.WriteLine("First Name: " + reader["first_name"] + "\tLast Name: " + reader["last_name"] + "\tStudent ID: " + reader["id"]);
+                writer.WriteLine("ID: " + reader["id"] + "\tTab Name: " + reader["tab_name"] + "\tLabel Name: " + reader["label_name"] + "\tInput: " + reader["input"]);
             writer.Close();
         }
     }
