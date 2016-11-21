@@ -18,3 +18,6 @@ C:\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.csproj.GenerateResource.Cache
 C:\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.userInterface.resources
 C:\cpsc10\DiveApp\DiveApp\bin\Debug\System.Data.SQLite.dll
 C:\cpsc10\DiveApp\DiveApp\bin\Debug\System.Data.SQLite.xml
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\bin\Debug\DiveApp.exe.config
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.exe
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.pdb
