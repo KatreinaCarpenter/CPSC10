@@ -55,7 +55,7 @@ namespace DiveApp
 
         private void preOpTab_Click(object sender, EventArgs e)
         {
-
+        
         }
 
         private void debriefTab_Click(object sender, EventArgs e)
@@ -248,6 +248,11 @@ namespace DiveApp
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
         {
 
         }

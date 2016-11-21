@@ -21,3 +21,10 @@ C:\cpsc10\DiveApp\DiveApp\bin\Debug\System.Data.SQLite.xml
 C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\bin\Debug\DiveApp.exe.config
 C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.exe
 C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.pdb
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\bin\Debug\DiveApp.exe
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\bin\Debug\DiveApp.pdb
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\bin\Debug\System.Data.SQLite.xml
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.csprojResolveAssemblyReference.cache
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.userInterface.resources
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.Properties.Resources.resources
+C:\Users\Katreina\git\cpsc10\DiveApp\DiveApp\obj\Debug\DiveApp.csproj.GenerateResource.Cache

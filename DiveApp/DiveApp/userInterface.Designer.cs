@@ -30,6 +30,29 @@
         {
             this.operationTabControl = new System.Windows.Forms.TabControl();
             this.opPlanTab = new System.Windows.Forms.TabPage();
+            this.label67 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label66 = new System.Windows.Forms.Label();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label65 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label64 = new System.Windows.Forms.Label();
+            this.radioButton26 = new System.Windows.Forms.RadioButton();
+            this.radioButton25 = new System.Windows.Forms.RadioButton();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label56 = new System.Windows.Forms.Label();
             this.diver1Tab = new System.Windows.Forms.TabPage();
             this.panel14 = new System.Windows.Forms.Panel();
             this.diverOneTitleLabel = new System.Windows.Forms.Label();
@@ -147,29 +170,8 @@
             this.diveLogsButton = new System.Windows.Forms.Button();
             this.operationsButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label56 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.radioButton25 = new System.Windows.Forms.RadioButton();
-            this.radioButton26 = new System.Windows.Forms.RadioButton();
-            this.label64 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label65 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
-            this.label66 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label67 = new System.Windows.Forms.Label();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.textBox13 = new System.Windows.Forms.TextBox();
             this.operationTabControl.SuspendLayout();
             this.opPlanTab.SuspendLayout();
             this.diver1Tab.SuspendLayout();
@@ -213,6 +215,8 @@
             // opPlanTab
             // 
             this.opPlanTab.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.opPlanTab.Controls.Add(this.textBox13);
+            this.opPlanTab.Controls.Add(this.vScrollBar1);
             this.opPlanTab.Controls.Add(this.label67);
             this.opPlanTab.Controls.Add(this.checkBox1);
             this.opPlanTab.Controls.Add(this.textBox12);
@@ -244,6 +248,214 @@
             this.opPlanTab.TabIndex = 0;
             this.opPlanTab.Text = "Operation Plan";
             this.opPlanTab.Click += new System.EventHandler(this.preOpTab_Click);
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(43, 543);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(222, 17);
+            this.label67.TabIndex = 22;
+            this.label67.Text = "By Whom: (Team prior to training)";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(46, 508);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(102, 21);
+            this.checkBox1.TabIndex = 21;
+            this.checkBox1.Text = "Site Survey";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // textBox12
+            // 
+            this.textBox12.Location = new System.Drawing.Point(495, 133);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(265, 22);
+            this.textBox12.TabIndex = 20;
+            this.textBox12.TextChanged += new System.EventHandler(this.textBox12_TextChanged);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(529, 100);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(277, 24);
+            this.comboBox2.TabIndex = 19;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(127, 168);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(176, 22);
+            this.textBox11.TabIndex = 18;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(90, 133);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(178, 22);
+            this.textBox10.TabIndex = 17;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(391, 366);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(445, 111);
+            this.textBox9.TabIndex = 16;
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(87, 369);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(287, 17);
+            this.label66.TabIndex = 15;
+            this.label66.Text = "C. Location(s) of incident and description(s):";
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Location = new System.Drawing.Point(261, 326);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(244, 22);
+            this.dateTimePicker3.TabIndex = 14;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Location = new System.Drawing.Point(87, 331);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(168, 17);
+            this.label65.TabIndex = 13;
+            this.label65.Text = "B. Anticipated Time/Date:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Evidence Recovery",
+            "Body Recovery",
+            "Rescue",
+            "Other"});
+            this.comboBox1.Location = new System.Drawing.Point(249, 290);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(199, 24);
+            this.comboBox1.TabIndex = 12;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(87, 293);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(144, 17);
+            this.label64.TabIndex = 11;
+            this.label64.Text = "A. Type of Operation:";
+            // 
+            // radioButton26
+            // 
+            this.radioButton26.AutoSize = true;
+            this.radioButton26.Location = new System.Drawing.Point(273, 251);
+            this.radioButton26.Name = "radioButton26";
+            this.radioButton26.Size = new System.Drawing.Size(81, 21);
+            this.radioButton26.TabIndex = 10;
+            this.radioButton26.TabStop = true;
+            this.radioButton26.Text = "Training";
+            this.radioButton26.UseVisualStyleBackColor = true;
+            // 
+            // radioButton25
+            // 
+            this.radioButton25.AutoSize = true;
+            this.radioButton25.Location = new System.Drawing.Point(170, 251);
+            this.radioButton25.Name = "radioButton25";
+            this.radioButton25.Size = new System.Drawing.Size(81, 21);
+            this.radioButton25.TabIndex = 9;
+            this.radioButton25.TabStop = true;
+            this.radioButton25.Text = "OP Plan";
+            this.radioButton25.UseVisualStyleBackColor = true;
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(43, 253);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(86, 17);
+            this.label63.TabIndex = 8;
+            this.label63.Text = "I. Situation";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(368, 136);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(121, 17);
+            this.label62.TabIndex = 7;
+            this.label62.Text = "Case Investigator:";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(368, 103);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(155, 17);
+            this.label61.TabIndex = 6;
+            this.label61.Text = "OP Plan Completed By:";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(13, 205);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(170, 17);
+            this.label60.TabIndex = 5;
+            this.label60.Text = "Briefing/Staging Location:";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(13, 171);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(108, 17);
+            this.label59.TabIndex = 4;
+            this.label59.Text = "State Mission #:";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(13, 103);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(77, 17);
+            this.label58.TabIndex = 3;
+            this.label58.Text = "Date/Time:";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(13, 136);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(67, 17);
+            this.label57.TabIndex = 2;
+            this.label57.Text = "Report #:";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(96, 98);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(245, 22);
+            this.dateTimePicker2.TabIndex = 1;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(9, 35);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(577, 38);
+            this.label56.TabIndex = 0;
+            this.label56.Text = "Field Operations Plan - Mission Report";
             // 
             // diver1Tab
             // 
@@ -1504,212 +1716,19 @@
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // label56
+            // vScrollBar1
             // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(46, 36);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(601, 39);
-            this.label56.TabIndex = 0;
-            this.label56.Text = "Field Operations Plan - Mission Report";
+            this.vScrollBar1.Location = new System.Drawing.Point(872, 2);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(18, 626);
+            this.vScrollBar1.TabIndex = 23;
             // 
-            // dateTimePicker2
+            // textBox13
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(126, 98);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(245, 22);
-            this.dateTimePicker2.TabIndex = 1;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(43, 136);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(67, 17);
-            this.label57.TabIndex = 2;
-            this.label57.Text = "Report #:";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(43, 103);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(77, 17);
-            this.label58.TabIndex = 3;
-            this.label58.Text = "Date/Time:";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(43, 171);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(108, 17);
-            this.label59.TabIndex = 4;
-            this.label59.Text = "State Mission #:";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(43, 205);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(170, 17);
-            this.label60.TabIndex = 5;
-            this.label60.Text = "Briefing/Staging Location:";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(431, 103);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(155, 17);
-            this.label61.TabIndex = 6;
-            this.label61.Text = "OP Plan Completed By:";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(431, 136);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(121, 17);
-            this.label62.TabIndex = 7;
-            this.label62.Text = "Case Investigator:";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(43, 253);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(86, 17);
-            this.label63.TabIndex = 8;
-            this.label63.Text = "I. Situation";
-            // 
-            // radioButton25
-            // 
-            this.radioButton25.AutoSize = true;
-            this.radioButton25.Location = new System.Drawing.Point(170, 251);
-            this.radioButton25.Name = "radioButton25";
-            this.radioButton25.Size = new System.Drawing.Size(81, 21);
-            this.radioButton25.TabIndex = 9;
-            this.radioButton25.TabStop = true;
-            this.radioButton25.Text = "OP Plan";
-            this.radioButton25.UseVisualStyleBackColor = true;
-            // 
-            // radioButton26
-            // 
-            this.radioButton26.AutoSize = true;
-            this.radioButton26.Location = new System.Drawing.Point(273, 251);
-            this.radioButton26.Name = "radioButton26";
-            this.radioButton26.Size = new System.Drawing.Size(81, 21);
-            this.radioButton26.TabIndex = 10;
-            this.radioButton26.TabStop = true;
-            this.radioButton26.Text = "Training";
-            this.radioButton26.UseVisualStyleBackColor = true;
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(87, 293);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(144, 17);
-            this.label64.TabIndex = 11;
-            this.label64.Text = "A. Type of Operation:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Evidence Recovery",
-            "Body Recovery",
-            "Rescue",
-            "Other"});
-            this.comboBox1.Location = new System.Drawing.Point(249, 290);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(199, 24);
-            this.comboBox1.TabIndex = 12;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(87, 331);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(168, 17);
-            this.label65.TabIndex = 13;
-            this.label65.Text = "B. Anticipated Time/Date:";
-            // 
-            // dateTimePicker3
-            // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(261, 326);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(244, 22);
-            this.dateTimePicker3.TabIndex = 14;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(87, 369);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(287, 17);
-            this.label66.TabIndex = 15;
-            this.label66.Text = "C. Location(s) of incident and description(s):";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(391, 366);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(445, 111);
-            this.textBox9.TabIndex = 16;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(126, 133);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(178, 22);
-            this.textBox10.TabIndex = 17;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(157, 168);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(176, 22);
-            this.textBox11.TabIndex = 18;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(592, 100);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(277, 24);
-            this.comboBox2.TabIndex = 19;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(558, 133);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(265, 22);
-            this.textBox12.TabIndex = 20;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(46, 508);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(102, 21);
-            this.checkBox1.TabIndex = 21;
-            this.checkBox1.Text = "Site Survey";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(43, 543);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(222, 17);
-            this.label67.TabIndex = 22;
-            this.label67.Text = "By Whom: (Team prior to training)";
+            this.textBox13.Location = new System.Drawing.Point(189, 202);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(438, 22);
+            this.textBox13.TabIndex = 24;
             // 
             // userInterface
             // 
@@ -1909,6 +1928,8 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.TextBox textBox13;
     }
 }
 
