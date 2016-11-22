@@ -30,6 +30,8 @@
         {
             this.operationTabControl = new System.Windows.Forms.TabControl();
             this.opPlanTab = new System.Windows.Forms.TabPage();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.opPlanScrollBar = new System.Windows.Forms.VScrollBar();
             this.label67 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -170,8 +172,6 @@
             this.diveLogsButton = new System.Windows.Forms.Button();
             this.operationsButton = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.textBox13 = new System.Windows.Forms.TextBox();
             this.operationTabControl.SuspendLayout();
             this.opPlanTab.SuspendLayout();
             this.diver1Tab.SuspendLayout();
@@ -216,7 +216,7 @@
             // 
             this.opPlanTab.BackColor = System.Drawing.Color.LightSteelBlue;
             this.opPlanTab.Controls.Add(this.textBox13);
-            this.opPlanTab.Controls.Add(this.vScrollBar1);
+            this.opPlanTab.Controls.Add(this.opPlanScrollBar);
             this.opPlanTab.Controls.Add(this.label67);
             this.opPlanTab.Controls.Add(this.checkBox1);
             this.opPlanTab.Controls.Add(this.textBox12);
@@ -248,6 +248,21 @@
             this.opPlanTab.TabIndex = 0;
             this.opPlanTab.Text = "Operation Plan";
             this.opPlanTab.Click += new System.EventHandler(this.preOpTab_Click);
+            // 
+            // textBox13
+            // 
+            this.textBox13.Location = new System.Drawing.Point(189, 202);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(438, 22);
+            this.textBox13.TabIndex = 24;
+            // 
+            // opPlanScrollBar
+            // 
+            this.opPlanScrollBar.Location = new System.Drawing.Point(872, 2);
+            this.opPlanScrollBar.Name = "opPlanScrollBar";
+            this.opPlanScrollBar.Size = new System.Drawing.Size(18, 626);
+            this.opPlanScrollBar.TabIndex = 23;
+            this.opPlanScrollBar.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
             // 
             // label67
             // 
@@ -1716,20 +1731,6 @@
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Location = new System.Drawing.Point(872, 2);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(18, 626);
-            this.vScrollBar1.TabIndex = 23;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(189, 202);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(438, 22);
-            this.textBox13.TabIndex = 24;
-            // 
             // userInterface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1928,7 +1929,7 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.VScrollBar opPlanScrollBar;
         private System.Windows.Forms.TextBox textBox13;
     }
 }
