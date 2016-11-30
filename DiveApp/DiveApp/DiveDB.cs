@@ -52,7 +52,7 @@ namespace DiveApp
 
         public void writeDB()
         {
-            StreamWriter writer = new StreamWriter("D:\\Users\\Mark\\Desktop\\DBTest.txt");
+            StreamWriter writer = new StreamWriter("C:\\Users\\Katreina\\Desktop\\DBTest.txt");
 
             //string sql = "insert into debrief values ('Sunday, November 20th', 0, 'NA', 1, 'Faulty mask', 'Sliced finger', 1, 'Jim', 0, 'NA', 1, 'Thad', 'Everything', 'Nothing')";
             string sql = "insert into debrief values ('" + date + "', " + vesselProblemsBool + ", '" + vesselProblemsDescription + "', " + equipmentProblemsBool + ", '" + equipmentProblemsDescription;
