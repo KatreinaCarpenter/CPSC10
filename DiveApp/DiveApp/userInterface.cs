@@ -352,5 +352,11 @@ namespace DiveApp
         {
 
         }
+
+        private void panel17_Paint(object sender, PaintEventArgs e)
+        {
+            //opPlanScrollBar.Scroll += (sender, e) => { panel17.VerticalScroll.Value = opPlanScrollBar.Value; };
+            //panel17.Controls.Add(opPlanScrollBar);
+        }
     }
 }
